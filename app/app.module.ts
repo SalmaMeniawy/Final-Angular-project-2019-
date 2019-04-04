@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { WishlistcounterComponent } from './components/wishlistcounter/wishlistcounter.component';
 import { CartcounterComponent } from './components/cartcounter/cartcounter.component';
+import { SingleproductComponent } from './components/singleproduct/singleproduct.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CartcounterComponent } from './components/cartcounter/cartcounter.compo
     FooterComponent,
     NavigationComponent,
     WishlistcounterComponent,
-    CartcounterComponent
+    CartcounterComponent,
+    SingleproductComponent
   ],
   imports: [
     BrowserModule,
