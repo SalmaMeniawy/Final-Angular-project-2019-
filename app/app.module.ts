@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { WishlistcounterComponent } from './components/wishlistcounter/wishlistcounter.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavigationComponent,
+    WishlistcounterComponent
   ],
   imports: [
     BrowserModule,
