@@ -6,7 +6,6 @@ import { AppComponent } from './components/app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { WishlistcounterComponent } from './components/wishlistcounter/wishlistcounter.component';
 import { CartcounterComponent } from './components/cartcounter/cartcounter.component';
 import { SingleproductComponent } from './components/singleproduct/singleproduct.component';
 import { BodyComponent } from './components/body/body.component';
@@ -15,14 +14,13 @@ import { RegisterformComponent } from './components/registerform/registerform.co
 import { LoginformComponent } from './components/loginform/loginform.component';
 import { NotFoundComponent} from './components/not-found/not-found.component';
 import { CartCounterDetailsComponent } from './components/cart-counter-details/cart-counter-details.component';
-import { WishListCounterDetailsComponent } from './components/wish-list-counter-details/wish-list-counter-details.component';
+import {WishListCounterDetailsComponent} from './components/wish-list-counter-details/wish-list-counter-details.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     NavigationComponent,
-    WishlistcounterComponent,
     CartcounterComponent,
     SingleproductComponent,
     NotFoundComponent,
