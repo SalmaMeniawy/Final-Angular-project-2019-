@@ -14,6 +14,8 @@ import { UsernameandlogoutComponent } from './components/usernameandlogout/usern
 import { RegisterformComponent } from './components/registerform/registerform.component';
 import { LoginformComponent } from './components/loginform/loginform.component';
 import { NotFoundComponent} from './components/not-found/not-found.component';
+import { CartCounterDetailsComponent } from './components/cart-counter-details/cart-counter-details.component';
+import { WishListCounterDetailsComponent } from './components/wish-list-counter-details/wish-list-counter-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { NotFoundComponent} from './components/not-found/not-found.component';
     BodyComponent,
     UsernameandlogoutComponent,
     RegisterformComponent,
-    LoginformComponent
+    LoginformComponent,
+    CartCounterDetailsComponent,
+    WishListCounterDetailsComponent
   ],
   imports: [
     BrowserModule,
