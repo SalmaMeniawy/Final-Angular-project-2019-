@@ -10,6 +10,9 @@ import { WishlistcounterComponent } from './components/wishlistcounter/wishlistc
 import { CartcounterComponent } from './components/cartcounter/cartcounter.component';
 import { SingleproductComponent } from './components/singleproduct/singleproduct.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { BodyComponent } from './components/body/body.component';
+import { UsernameComponent } from './components/username/username.component';
+import { UsernameandlogoutComponent } from './components/usernameandlogout/usernameandlogout.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     WishlistcounterComponent,
     CartcounterComponent,
     SingleproductComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    BodyComponent,
+    UsernameComponent,
+    UsernameandlogoutComponent
   ],
   imports: [
     BrowserModule,
