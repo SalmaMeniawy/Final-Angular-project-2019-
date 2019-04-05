@@ -9,13 +9,11 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { WishlistcounterComponent } from './components/wishlistcounter/wishlistcounter.component';
 import { CartcounterComponent } from './components/cartcounter/cartcounter.component';
 import { SingleproductComponent } from './components/singleproduct/singleproduct.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
 import { BodyComponent } from './components/body/body.component';
-import { UsernameComponent } from './components/username/username.component';
 import { UsernameandlogoutComponent } from './components/usernameandlogout/usernameandlogout.component';
 import { RegisterformComponent } from './components/registerform/registerform.component';
 import { LoginformComponent } from './components/loginform/loginform.component';
-
+import { NotFoundComponent} from './components/not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +25,6 @@ import { LoginformComponent } from './components/loginform/loginform.component';
     SingleproductComponent,
     NotFoundComponent,
     BodyComponent,
-    UsernameComponent,
     UsernameandlogoutComponent,
     RegisterformComponent,
     LoginformComponent
