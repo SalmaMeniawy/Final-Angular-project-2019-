@@ -13,6 +13,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { BodyComponent } from './components/body/body.component';
 import { UsernameComponent } from './components/username/username.component';
 import { UsernameandlogoutComponent } from './components/usernameandlogout/usernameandlogout.component';
+import { RegisterformComponent } from './components/registerform/registerform.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { UsernameandlogoutComponent } from './components/usernameandlogout/usern
     NotFoundComponent,
     BodyComponent,
     UsernameComponent,
-    UsernameandlogoutComponent
+    UsernameandlogoutComponent,
+    RegisterformComponent
   ],
   imports: [
     BrowserModule,
