@@ -14,6 +14,7 @@ import { BodyComponent } from './components/body/body.component';
 import { UsernameComponent } from './components/username/username.component';
 import { UsernameandlogoutComponent } from './components/usernameandlogout/usernameandlogout.component';
 import { RegisterformComponent } from './components/registerform/registerform.component';
+import { LoginformComponent } from './components/loginform/loginform.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RegisterformComponent } from './components/registerform/registerform.co
     BodyComponent,
     UsernameComponent,
     UsernameandlogoutComponent,
-    RegisterformComponent
+    RegisterformComponent,
+    LoginformComponent
   ],
   imports: [
     BrowserModule,
