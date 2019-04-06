@@ -1,4 +1,6 @@
-import {Product} from 'src/app/models/product';
+
+import { Product } from '../models/product';
+// 'src/app/models/product';
 export const products : Product[] = [
     {
         id : "HT-1000",
