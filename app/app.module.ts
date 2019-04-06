@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -15,6 +15,7 @@ import { LoginformComponent } from './components/loginform/loginform.component';
 import { NotFoundComponent} from './components/not-found/not-found.component';
 import { CartCounterDetailsComponent } from './components/cart-counter-details/cart-counter-details.component';
 import {WishListCounterDetailsComponent} from './components/wish-list-counter-details/wish-list-counter-details.component';
+import {WishlistcounterComponent} from './components/wishlistcounter/wishlistcounter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,11 +30,13 @@ import {WishListCounterDetailsComponent} from './components/wish-list-counter-de
     RegisterformComponent,
     LoginformComponent,
     CartCounterDetailsComponent,
-    WishListCounterDetailsComponent
+    WishListCounterDetailsComponent,
+    WishlistcounterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
