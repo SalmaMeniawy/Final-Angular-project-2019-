@@ -5,13 +5,15 @@ import {CartCounterDetailsComponent} from './components/cart-counter-details/car
 import {WishListCounterDetailsComponent} from './components/wish-list-counter-details/wish-list-counter-details.component';
 import {SingleproductComponent} from './components/singleproduct/singleproduct.component';
 import {RegisterformComponent} from './components/registerform/registerform.component';
+import {NotFoundComponent} from './components/not-found/not-found.component';
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
 {path:'home' ,component:BodyComponent},
 {path:'cartlist' , component:CartCounterDetailsComponent},
 {path:'wishlist' , component:WishListCounterDetailsComponent},
 {path:'productitem' , component:SingleproductComponent},
-{path: 'registerForm',component:RegisterformComponent}
+{path: 'registerForm',component:RegisterformComponent},
+{path:'**' , component:NotFoundComponent}
 ];
 
 @NgModule({
