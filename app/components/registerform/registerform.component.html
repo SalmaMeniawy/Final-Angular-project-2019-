@@ -1,3 +1,21 @@
-<p>
-  registerform works!
-</p>
+<form [formGroup]="registerForm">
+  <label>
+    First Name:
+    <input type="text" formControlName = "firstName">
+  </label>
+  <label>
+    Last Name : 
+    <input type="text" formControlName="lastName">
+  </label>
+  <label>
+    Password :
+    <input type="password" formControlName="password">
+  </label>
+  <label>
+    Conferm Password :
+    <input type="password" formControlName="confPassword">
+  </label>
+  <div>
+    <button type="submit" class="btn btn-success"></button>
+  </div>
+</form>
