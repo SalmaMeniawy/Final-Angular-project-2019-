@@ -5,7 +5,9 @@ import {CartCounterDetailsComponent} from './components/cart-counter-details/car
 import {WishListCounterDetailsComponent} from './components/wish-list-counter-details/wish-list-counter-details.component';
 import {SingleproductComponent} from './components/singleproduct/singleproduct.component';
 import {RegisterformComponent} from './components/registerform/registerform.component';
+import {LoginformComponent } from './components/loginform/loginform.component';
 import {NotFoundComponent} from './components/not-found/not-found.component';
+import { from } from 'rxjs';
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
 {path:'home' ,component:BodyComponent},
@@ -13,6 +15,7 @@ const routes: Routes = [
 {path:'wishlist' , component:WishListCounterDetailsComponent},
 {path:'productitem' , component:SingleproductComponent},
 {path: 'registerForm',component:RegisterformComponent},
+{path:'loginForm' ,component:LoginformComponent },
 {path:'**' , component:NotFoundComponent}
 ];
 
