@@ -49,7 +49,7 @@ export const products : Product[] = [
         name:"Ultra Jet Super Highspeed",
         price: 170,
         description:"4800 dpi x 1200 dpi - up to 35 ppm (mono) / up to 34 ppm (color) - capacity: 250 sheets - Hi-Speed USB2.0, Ethernet",
-        img:"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1052.jpg",
+        img:"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1050.jpg",
     },
     {
         id: "HT-1060",
