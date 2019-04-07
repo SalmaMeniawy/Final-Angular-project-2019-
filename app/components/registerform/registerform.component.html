@@ -1,21 +1,24 @@
-<form [formGroup]="registerForm">
-  <label>
-    First Name:
-    <input type="text" formControlName = "firstName">
-  </label>
-  <label>
-    Last Name : 
-    <input type="text" formControlName="lastName">
-  </label>
-  <label>
-    Password :
-    <input type="password" formControlName="password">
-  </label>
-  <label>
-    Conferm Password :
-    <input type="password" formControlName="confPassword">
-  </label>
-  <div>
-    <button type="submit" class="btn btn-success"></button>
-  </div>
-</form>
+<form   [formGroup]="registerForm">
+  <hr><hr>
+    <div class="form-group">
+      <h1>Register Form</h1>
+    </div>
+    <hr><hr>
+    <div class="form-group">
+      <label><h2>First Name :</h2> </label>
+      <input type="text" class="form-control"formControlName = "firstName" placeholder="Enter your first name">
+     </div>
+    <div class="form-group">
+      <label><h2> Last Name :</h2></label>
+      <input type="text" class="form-control" formControlName = "lastName" placeholder="Enter your Last Name">
+    </div>
+    <div class="form-group">
+        <label><h2> Password :</h2></label>
+        <input type="password" class="form-control" formControlName = "password" placeholder="Enter Password">
+    </div>
+    <div class="form-group">
+        <label><h2> conferm Password :</h2></label>
+        <input type="password" class="form-control" formControlName = "confPassword" placeholder="Enter conferm password">
+      </div>
+    <button type="submit" class="btn btn-success btn-lg">Submit</button>
+  </form>
