@@ -17,6 +17,7 @@ import { NotFoundComponent} from './components/not-found/not-found.component';
 import { CartCounterDetailsComponent } from './components/cart-counter-details/cart-counter-details.component';
 import {WishListCounterDetailsComponent} from './components/wish-list-counter-details/wish-list-counter-details.component';
 import {WishlistcounterComponent} from './components/wishlistcounter/wishlistcounter.component';
+import { SingleProductDetailsComponent } from './components/single-product-details/single-product-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import {WishlistcounterComponent} from './components/wishlistcounter/wishlistcou
     LoginformComponent,
     CartCounterDetailsComponent,
     WishListCounterDetailsComponent,
-    WishlistcounterComponent
+    WishlistcounterComponent,
+    SingleProductDetailsComponent
   ],
   imports: [
     BrowserModule,
