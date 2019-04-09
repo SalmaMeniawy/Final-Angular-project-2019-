@@ -1,16 +1,16 @@
-
-<div *ngIf = "product" >
+<div *ngIf="product">
   <div class="productItem">
-    <img src={{product.img}} class="rounded float-left" >
+    <img src={{product.img}} class="rounded float-left">
     <h3>{{product.name}}</h3>
     <h4>{{product.price}} $</h4>
   </div>
   <div class="d-inline-block">
-      <button type="button" class="btn btn-success btn-lg "> Add to Cart List</button>
-      <button type="button" class="btn btn-info btn-lg ">Add To Wish List</button>
+    <button type="button" class="btn btn-success btn-lg "> Add to Cart List</button>
+    <button type="button" class="btn btn-info btn-lg ">Add To Wish List</button>
   </div>
   <div>
-<button type="button" class="btn btn-link btn-lg" routerLink="/productdetails" (click)="showProduct()" >more details </button>
+    <button type="button" class="btn btn-link btn-lg" routerLink="/productdetails" (click)="showProduct()">more details
+    </button>
   </div>
 
 </div>
