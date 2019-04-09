@@ -11,10 +11,12 @@ export class BodyComponent implements OnInit {
 
   constructor( public productService : ProductService) { }
   products : Product[];
+   
   ngOnInit() {
     this.getProducts();
   }
   getProducts():void{
     this.products = this.productService.getProducts();
   }
+  
 }
