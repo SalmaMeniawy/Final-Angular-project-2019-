@@ -12,7 +12,7 @@ export class SingleproductComponent implements OnInit {
   @Input() product: Product;
   constructor(private productdisplayservice: ProductDisplayService) { }
   showProduct(): void {
-    this.productdisplayservice.sendProduct( this.product);
+    this.productdisplayservice.sendProduct(this.product);
     // console.log("Hello from show product ");
   }
   ngOnInit() {
