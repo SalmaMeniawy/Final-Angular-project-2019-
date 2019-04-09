@@ -1,18 +1,10 @@
-<table class="table">
-  <thead>
-  </thead>
-  <tbody>
-    <tr class="d-inline-block" *ngFor=" let product of products" >
-      <td>
+
+        <div class="d-inline-block" *ngFor=" let product of products">
         <div class="container">
           <div>
             <app-singleproduct [product]="product"> </app-singleproduct>
           </div>
        
         </div>
-      </td>
-    </tr>
-
-  </tbody>
-</table>
-
+      </div>
+     
