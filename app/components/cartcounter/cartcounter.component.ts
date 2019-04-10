@@ -11,45 +11,42 @@ import { Product } from 'src/app/models/product';
 })
 export class CartcounterComponent implements OnInit {
   public subscription = Subscription;
-  public numberOfProducts :number = 0;
+  public numberOfProducts: number = 0;
   public products = {};
   constructor(private productDeliver: ProductDeliverService) {
-    this.productDeliver.getProduct().subscribe((product)=>{
-      if(product){
-        
-        console.log("first");
-        if(this.products[product["name"]] === undefined)
-        {
-          // console.log("this is the first time");
-          console.log(this.products);
-          console.log(product["name"]);
+    this.productDeliver.getProduct().subscribe((product) => {
+      if (product) {
+
+
+        if (this.products[product["name"]] === undefined) {
+
+
           this.products[product["name"]] = 1;
         }
-        else{
+        else {
           this.products[product["name"]]++;
-          console.log(product["name"]);
-          console.log(this.products);
+
         }
-        console.log(this.numberOfProducts);
+
         this.numberOfProducts = this.countProducts(this.products);
-        console.log(this.numberOfProducts);
+
       }
-      else{
+      else {
         // console.log("Products are empty");
       }
-      
+
     });
   }
 
   ngOnInit() {
   }
-  
+
   countProducts(obj) {
     let countArray = Object.values(obj);
     let arrsum = arr => arr.reduce((a, b) => a + b, 0);
     return arrsum(countArray);
   }
- 
+
   removeProduct(product) {
     if (this.products[product.key] > 1) {
       this.products[product.key]--;
