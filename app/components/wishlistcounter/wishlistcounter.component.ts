@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductWishListService} from 'src/app/services/product-wish-list.service';
 import { Product } from 'src/app/models/product';
-import { products } from 'src/app/data/mock-products';
+
 
 @Component({
   selector: 'app-wishlistcounter',
