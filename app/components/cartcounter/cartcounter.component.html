@@ -1,10 +1,13 @@
 <div class="btn-group mr-3">
   <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
     <button class="btn btn-outline-primary" ngbDropdownToggle> Cart List </button>
-    <div class="dropdown-menu" ngbDropdownMenu>
-      <button ngbDropdownItem>One</button>
-      <button ngbDropdownItem>Two</button>
-      <button ngbDropdownItem>Four!</button>
+    <span class="badge badge-success badge-secondary"><b>{{numberOfProducts}}</b></span>
+    <div *ngIf="products" class="container">
+      <div *ngIf="products" ngbDropdownMenu aria-labelledby="dropdownManual" class="row">
+        <li *ngFor="let product of products | keyvalue" ngbDropdownItem>{{product.key}}
+          <span class="badge badge-pill badge-success"><b>{{product.value}}</b></span><span
+            (click)="removeProduct(product)" class="btn x">X</span></li>
+      </div>
     </div>
   </div>
 </div>
