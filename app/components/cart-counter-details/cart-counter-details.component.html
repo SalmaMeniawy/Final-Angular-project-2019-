@@ -1,3 +1,24 @@
-<p>
-  cart-counter-details works!
-</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product ID</th>
+      <th scope="col">Product </th>
+      <th scope="col">Product Price</th>
+      <th scope="col">Remove Product</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of wishListProducts ; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td></td>
+      <td>
+        <img src="" class="mr-2" style="width: 20px">
+       
+      </td>
+      <td></td>
+
+
+    </tr>
+  </tbody>
+</table>

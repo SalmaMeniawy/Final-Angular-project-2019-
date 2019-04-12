@@ -1,6 +1,7 @@
 <div class="btn-group mr-3">
   <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
     <button class="btn btn-outline-primary" ngbDropdownToggle> Wish List </button>
+    <span class="badge badge-success badge-secondary"><b>{{numberOfProducts}}</b></span>
     <div *ngIf="wishListProducts" class="container">
       <div *ngIf="wishListProducts" ngbDropdownMenu aria-labelledby="dropdownManual" class="row">
           <li *ngFor="let product of wishListProducts" ngbDropdownItem>{{product.name}}

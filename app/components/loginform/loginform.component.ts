@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl ,FormGroup, Validators} from '@angular/forms';
+import {FormGroup, Validators, FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'app-loginform',
@@ -7,13 +7,22 @@ import {FormControl ,FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./loginform.component.scss']
 })
 export class LoginformComponent implements OnInit {
-
-  constructor() { }
-  loginForm = new FormGroup({
-    userName : new FormControl('',[Validators.required]),
-    password : new FormControl('',[Validators.required]),
-  });
+  LoginForm: FormGroup;
+  submitted = false;
+  constructor(private formBuilder: FormBuilder) { }
+  
   ngOnInit() {
+    this.LoginForm = this.formBuilder.group({
+      userName: ['', Validators.required],
+      password:['',Validators.required]
+    });
   }
-
+  get f() { return this.LoginForm.controls; }
+  onSubmit(){
+    this.submitted = true;
+    if (this.LoginForm.invalid) {
+      return;
+    }
+    else {}
+  }
 }
